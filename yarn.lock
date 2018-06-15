@@ -1866,6 +1866,21 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
+<<<<<<< 9e056675c2d2b8cd42b6f8ed959bff876f29359b
+=======
+document-register-element@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/document-register-element/-/document-register-element-1.8.1.tgz#db841ece6cba28e6e538ac8e815413b59e86047e"
+  dependencies:
+    lightercollective "^0.0.0"
+
+dom-converter@~0.1:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.1.4.tgz#a45ef5727b890c9bffe6d7c876e7b19cb0e17f3b"
+  dependencies:
+    utila "~0.3"
+
+>>>>>>> working version
 dom-serialize@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/dom-serialize/-/dom-serialize-2.2.1.tgz#562ae8999f44be5ea3076f5419dcd59eb43ac95b"

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   @Input() name;
+
+  @Output() greet = new EventEmitter();
+
+  doGreet() {
+    this.greet.emit(`Hi, ${this.name}!`);
+  }
 }

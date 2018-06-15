@@ -777,6 +777,13 @@ function yu(e,t){"undefined"!=typeof COMPILED&&COMPILED||((be.ng=be.ng||{})[e]=t
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
+<<<<<<< 2555cec80c90a0e62e9caca319d50e3ce2894ee2
  */(function(){if(tn)throw new Error("Cannot enable prod mode after platform setup.");en=!1})(),lc().bootstrapModuleFactory(pc).catch(function(e){return console.log(e)})},function(e,t,n){e.exports=n(1)}]);
 >>>>>>> adding ngx-build-plus
+<<<<<<< 18426c14bf9ce741e345bc9a671616d5d68fb1e4
 >>>>>>> adding ngx-build-plus
+=======
+=======
+ */(function(){if(tn)throw new Error("Cannot enable prod mode after platform setup.");en=!1})(),lc().bootstrapModuleFactory(pc,{ngZone:"noop"}).catch(function(e){return console.log(e)})},function(e,t,n){e.exports=n(1)}]);
+>>>>>>> avoid zone.js
+>>>>>>> avoid zone.js

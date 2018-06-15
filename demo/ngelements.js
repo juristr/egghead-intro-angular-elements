@@ -952,6 +952,7 @@ function yu(e,t){"undefined"!=typeof COMPILED&&COMPILED||((be.ng=be.ng||{})[e]=t
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
+<<<<<<< efd7f313fe13b1f34dd8eb5517a7b43bcad8983f
 <<<<<<< a0f76c75b9bcbf43bfc587bd389bb5c8e6fcae84
  */(function(){if(tn)throw new Error("Cannot enable prod mode after platform setup.");en=!1})(),lc().bootstrapModuleFactory(pc,{ngZone:"noop"}).catch(function(e){return console.log(e)})},function(e,t,n){e.exports=n(1)}]);
 =======
@@ -963,3 +964,6 @@ function yu(e,t){"undefined"!=typeof COMPILED&&COMPILED||((be.ng=be.ng||{})[e]=t
 =======
  */(function(){if(tn)throw new Error("Cannot enable prod mode after platform setup.");en=!1})(),lc().bootstrapModuleFactory(pc).catch(function(e){return console.log(e)})},function(e,t,n){e.exports=n(1)}]);
 >>>>>>> adding ngx-build-plus
+=======
+ */(function(){if(tn)throw new Error("Cannot enable prod mode after platform setup.");en=!1})(),lc().bootstrapModuleFactory(pc,{ngZone:"noop"}).catch(function(e){return console.log(e)})},function(e,t,n){e.exports=n(1)}]);
+>>>>>>> avoid zone.js

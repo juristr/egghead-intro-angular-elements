@@ -6,7 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     <div>
       Hi, {{ name }}!
     </div>
-    <button (click)="doGreet()">Say Hello</button>
+    <button (click)="doGreet()">Greet</button>
   `,
   styles: []
 })
@@ -17,7 +17,7 @@ export class GreeterComponent implements OnInit {
   constructor() {}
 
   doGreet() {
-    this.greet.emit(`Hi, ${this.name}!`);
+    this.greet.emit(`Hi, ${this.name}`);
   }
 
   ngOnInit() {}

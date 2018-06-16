@@ -7,9 +7,8 @@
   <script src="./scripts.js"></script>
   <script src="./ngelements.js"></script>
   <script>
-    const wc = document.querySelector('do-greet');
-    wc.addEventListener('greet', (ev) => {
-      console.log(ev);
+    const el = document.querySelector('do-greet');
+    el.addEventListener('greet', (ev) => {
       alert(ev.detail);
     });
   </script>

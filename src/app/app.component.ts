@@ -2,8 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+  <h1>Angular Elements</h1>
+  <button (click)="addGreeter()">Add greeter</button>
+  <div id="container"></div>
+  `
 })
 export class AppComponent {
   addGreeter() {

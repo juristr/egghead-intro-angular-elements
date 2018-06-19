@@ -97,6 +97,12 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/cdk@^6.2.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-6.3.0.tgz#fd914e4e145e48db1d51f38012178b97ddb78772"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@~6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-6.0.8.tgz#65070958b944be30053232c51f8449b7ddd4d92a"
@@ -162,6 +168,12 @@
 "@angular/language-service@^6.0.3":
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.0.5.tgz#824c8cb43ab3976ddb9442ba39562e1dd0108155"
+
+"@angular/material@^6.2.1":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-6.3.0.tgz#c78ca3c0d9651d4d8786b9693a83dca0916cfe01"
+  dependencies:
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^6.0.3":
   version "6.0.5"
@@ -6106,7 +6118,7 @@ tsickle@^0.29.0:
     source-map "^0.6.0"
     source-map-support "^0.5.0"
 
-tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.7.1, tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.2.tgz#8be0cc9a1f6dc7727c38deb16c2ebd1a2892988e"
 

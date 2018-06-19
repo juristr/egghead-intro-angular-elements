@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <feedback-form></feedback-form>
+
+  <!-- <script src="./zone.js"></script> -->
+  <!-- <script src="./scripts.js"></script> -->
+  <script src="./ngelements.js"></script>
+  <script>
+    const el = document.querySelector('feedback-form');
+    el.addEventListener('feedbackSubmit', (ev) => {
+      console.log('got this', ev.detail);
+    });
+  </script>
+</body>
+
+</html>

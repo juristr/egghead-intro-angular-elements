@@ -1,19 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Injector, ApplicationRef } from '@angular/core';
+import { Injector, NgModule, ApplicationRef } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
-
-import { FeedbackFormComponent } from './feedback-form.component';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 import {
+  MatButtonModule,
+  MatCardModule,
   MatFormFieldModule,
   MatInputModule,
-  MatSelectModule,
-  MatButtonModule,
-  MatCardModule
+  MatSelectModule
 } from '@angular/material';
-import { ReactiveFormsModule } from '@angular/forms';
-import { interval } from 'rxjs';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FeedbackFormComponent } from './feedback-form.component';
 
 const materialModules = [
   MatFormFieldModule,
@@ -24,7 +21,7 @@ const materialModules = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, FeedbackFormComponent],
+  declarations: [FeedbackFormComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -33,7 +30,6 @@ const materialModules = [
   ],
   providers: [],
   entryComponents: [FeedbackFormComponent]
-  // bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor(injector: Injector) {

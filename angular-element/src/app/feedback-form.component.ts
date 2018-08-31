@@ -1,4 +1,15 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  Output,
+  EventEmitter,
+  AfterViewInit,
+  ElementRef,
+  Attribute,
+  AfterContentInit,
+  ChangeDetectorRef
+} from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -9,8 +20,20 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class FeedbackFormComponent implements OnInit {
   feedbackForm: FormGroup;
+  _name;
+
   @Input()
-  name;
+  set name(val) {
+    this._name = val;
+
+    this.feedbackForm.patchValue({
+      name: val
+    });
+  }
+  get name() {
+    return this._name;
+  }
+
   @Output()
   feedbackSubmit = new EventEmitter();
 

@@ -11,6 +11,7 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeedbackFormComponent } from './feedback-form.component';
+import { interval } from 'rxjs';
 
 const materialModules = [
   MatFormFieldModule,
@@ -32,11 +33,14 @@ const materialModules = [
   entryComponents: [FeedbackFormComponent]
 })
 export class AppModule {
-  constructor(injector: Injector) {
+  constructor(injector: Injector, appRef: ApplicationRef) {
     const el = createCustomElement(FeedbackFormComponent, {
       injector: injector
     });
     customElements.define('feedback-form', el);
+
+    // workaround for now
+    interval(50).subscribe(() => appRef.tick());
   }
 
   ngDoBootstrap() {}

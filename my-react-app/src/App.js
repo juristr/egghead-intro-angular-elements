@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  name = 'Juri';
+
   componentDidMount() {
     this.component.addEventListener('feedbackSubmit', this.onFeedbackSubmit);
   }
@@ -27,7 +29,7 @@ class App extends Component {
           <h1 className="App-title">React meets Angular</h1>
         </header>
         <div className="form-container">
-          <feedback-form ref={this.handleRef} />
+          <feedback-form name={this.name} ref={this.handleRef} />
         </div>
       </div>
     );

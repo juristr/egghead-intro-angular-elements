@@ -14,14 +14,14 @@ export class FeedbackFormComponent implements OnInit {
   @Output()
   feedbackSubmit = new EventEmitter();
 
-  constructor() {
+  constructor() {}
+
+  ngOnInit() {
     this.feedbackForm = new FormGroup({
-      name: new FormControl(''),
+      name: new FormControl(this.name),
       feedback: new FormControl('')
     });
   }
-
-  ngOnInit() {}
 
   onSubmit({ value, valid }) {
     if (valid) {

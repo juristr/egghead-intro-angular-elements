@@ -1,9 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
-import { createCustomElement } from '@angular/elements';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { GreeterComponent } from './greeter.component';
+import { createCustomElement } from '@angular/elements';
 
 @NgModule({
   declarations: [AppComponent, GreeterComponent],

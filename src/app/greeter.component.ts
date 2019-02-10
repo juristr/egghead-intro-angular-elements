@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'do-greet',
+  // selector: 'do-greet',
   template: `
     <div>
       Hi there!

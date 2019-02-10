@@ -1,19 +1,14 @@
 <html>
-<<<<<<< 18426c14bf9ce741e345bc9a671616d5d68fb1e4
   <body>
-    <do-greet></do-greet>
+    <do-greet name="Juri"></do-greet>
+
     <script src="./polyfills.js"></script>
     <script src="./ngelements.js"></script>
+    <script>
+      const el = document.querySelector('do-greet');
+      el.addEventListener('greet', ev => {
+        alert(ev.detail);
+      });
+    </script>
   </body>
-=======
-
-<body>
-  <do-greet></do-greet>
-
-  <!-- <script src="./zone.js"></script> -->
-  <script src="./scripts.js"></script>
-  <script src="./ngelements.js"></script>
-</body>
-
->>>>>>> avoid zone.js
 </html>

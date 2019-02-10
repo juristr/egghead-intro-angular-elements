@@ -22,15 +22,9 @@
     "@angular/router": "~7.2.0",
     "@webcomponents/webcomponentsjs": "^2.2.7",
     "core-js": "^2.5.4",
-<<<<<<< 76c8bb4dfbd18914edcdcee061040dfda68c0c46
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
-=======
-    "document-register-element": "1.8.1",
-    "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
->>>>>>> custom build works
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",

@@ -12,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeedbackFormComponent } from './feedback-form.component';
 import { interval } from 'rxjs';
+import { DisplayComponent } from './display/display.component';
 
 const materialModules = [
   MatFormFieldModule,
@@ -22,7 +23,7 @@ const materialModules = [
 ];
 
 @NgModule({
-  declarations: [FeedbackFormComponent],
+  declarations: [FeedbackFormComponent, DisplayComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -30,18 +31,20 @@ const materialModules = [
     ...materialModules
   ],
   providers: [],
-  entryComponents: [FeedbackFormComponent]
+  entryComponents: [FeedbackFormComponent, DisplayComponent]
 })
 export class AppModule {
-  constructor(injector: Injector, appRef: ApplicationRef) {
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap() {
     const el = createCustomElement(FeedbackFormComponent, {
-      injector: injector
+      injector: this.injector
     });
     customElements.define('feedback-form', el);
 
-    // workaround for now
-    interval(50).subscribe(() => appRef.tick());
+    const displayEl = createCustomElement(DisplayComponent, {
+      injector: this.injector
+    });
+    customElements.define('display-cmp', displayEl);
   }
-
-  ngDoBootstrap() {}
 }

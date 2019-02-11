@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { ShareService } from './share.service';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -14,7 +15,7 @@ export class FeedbackFormComponent implements OnInit {
   @Output()
   feedbackSubmit = new EventEmitter();
 
-  constructor() {}
+  constructor(private shareService: ShareService) {}
 
   ngOnInit() {
     this.feedbackForm = new FormGroup({
@@ -26,6 +27,7 @@ export class FeedbackFormComponent implements OnInit {
   onSubmit({ value, valid }) {
     if (valid) {
       this.feedbackSubmit.next(value);
+      this.shareService.name = value.name;
     }
   }
 }

@@ -1,21 +1,15 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+  <body>
+    <feedback-form name="Juri"></feedback-form>
 
-<body>
-  <feedback-form name="Juri"></feedback-form>
+    <hr />
 
+    <display-cmp></display-cmp>
 
-  <script src="./ngelements.js"></script>
-  <script>
-    const el = document.querySelector('feedback-form');
-    el.addEventListener('feedbackSubmit', (ev) => {
-      console.log('got this', ev.detail);
-    });
-  </script>
-
-</body>
-
+    <script src="./ngelements.js"></script>
+  </body>
 </html>

@@ -33,14 +33,11 @@ const materialModules = [
   entryComponents: [FeedbackFormComponent]
 })
 export class AppModule {
-  constructor(injector: Injector, appRef: ApplicationRef) {
+  constructor(injector: Injector) {
     const el = createCustomElement(FeedbackFormComponent, {
       injector: injector
     });
     customElements.define('feedback-form', el);
-
-    // workaround for now
-    interval(50).subscribe(() => appRef.tick());
   }
 
   ngDoBootstrap() {}
